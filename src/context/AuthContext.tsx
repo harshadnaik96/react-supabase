@@ -1,5 +1,4 @@
 import { createContext, useEffect, useState } from "react";
-import { db } from "../db";
 import { AuthService } from "../services";
 
 type AuthConfig = {
