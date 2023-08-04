@@ -86,12 +86,14 @@ export const SignIn = (): JSX.Element => {
         <div className='text-center'>
           <p className='text-xs text-content'>
             New around here ?{" "}
-            <a
+            <span
+              onClick={() => {
+                navigate(route.SIGN_UP);
+              }}
               className='cursor-pointer hover:underline text-primary'
-              href={route.SIGN_UP}
             >
               Create Account
-            </a>
+            </span>
           </p>
         </div>
       </form>
